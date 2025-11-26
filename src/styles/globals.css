@@ -1,0 +1,28 @@
+/* Import Tailwind CSS components */
+@tailwind utilities;
+@import "tailwindcss";
+
+/* Custom global styles can be added here if necessary.
+  However, it's best practice in a Tailwind project to rely mostly
+  on utility classes to minimize custom CSS.
+*/
+
+/* Example: Resetting box sizing globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Example: Setting a default font or background */
+body {
+  /* This ensures the entire page uses the system font and a light gray background */
+  @apply font-sans bg-gray-50;
+}
+
+/* Example: A custom utility class you might want to define */
+@layer utilities {
+  .clip-text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
