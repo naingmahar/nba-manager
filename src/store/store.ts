@@ -1,3 +1,5 @@
+'use client';
+
 import { configureStore } from '@reduxjs/toolkit';
 import { createWrapper } from 'next-redux-wrapper';
 import { persistStore, persistReducer } from 'redux-persist'; 
@@ -6,6 +8,7 @@ import { Reducer } from 'redux';
 import rootReducer from './rootReducer';
 import { AuthState, PlayerState, TeamState } from '@/types'; 
 import { CombinedState } from '@reduxjs/toolkit/query';
+import { use } from 'react';
 
 // --- FIX: Manual definition for PersistPartial ---
 /**

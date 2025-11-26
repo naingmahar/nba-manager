@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { useAppSelector } from '@/store/hooks'; // Import typed selector
+import { useAppSelector } from '@/store/hook'; // Import typed selector
 import Login from '@/components/auth/Login';
 import PlayerList from '@/components/players/PlayerList';
 import TeamList from '@/components/teams/TeamList';
